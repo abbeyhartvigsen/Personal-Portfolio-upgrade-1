@@ -1,3 +1,7 @@
+
+.stretch {
+    height: 1000px;
+}
 .project {
     text-decoration: none;
     color: #008080;
@@ -24,3 +28,10 @@
     font-size: 1.5rem;
     text-align: center;
   }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
