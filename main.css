@@ -1,6 +1,6 @@
 
 .stretch {
-    height: 1000px;
+    height: 10px;
 }
 
 * {
@@ -20,12 +20,12 @@ border:solid; */
 }
 
 nav {
-  text-align: left;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  background-color: #e0ebe8;
+  background-color: #1b6451;
 } 
 
 .project {
