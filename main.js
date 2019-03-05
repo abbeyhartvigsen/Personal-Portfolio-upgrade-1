@@ -1,4 +1,6 @@
 import { films } from './films.js'
+//should I add another api too?
+//should I put swpeople.js in this file?
 
 const intro = document.querySelector('.intro')
 
@@ -16,6 +18,7 @@ films.forEach(film => {
   crawlElement.textContent = film.opening_crawl
 
   intro.appendChild(tile)
+})
 // let foo = document.querySelector('.title')
 // let bar= document.querySelector('.crawl')
 // //check both above lines
