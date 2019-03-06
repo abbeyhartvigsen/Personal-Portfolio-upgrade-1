@@ -94,8 +94,8 @@ nav {
   .intro div {
     width: 400px;
     height: 340px;
-    border: 2px solid yellow;
-    text-align: center;
+    /* border: 2px solid yellow;
+    text-align: center; */
     /* color:red; 
     background:#f0f0f0;
     width:100%;
@@ -198,3 +198,5 @@ background-color: #413659;
     background: #04195e;
     color: #fff;
   }
+
+  /*should I add swpeople.css into this file?*/

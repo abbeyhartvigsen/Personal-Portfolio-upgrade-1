@@ -1,4 +1,5 @@
 import { films } from './films.js'
+ import { people } from './people.js'
 //should I add another api too?
 //should I put swpeople.js in this file?
 
@@ -19,6 +20,19 @@ films.forEach(film => {
 
   intro.appendChild(tile)
 })
+
+// people.filter((currentValue, index, arr), thisValue)
+// let peopleArray = people.filter(peopleFunction1=> peopleFunction1 ["films"] == "https://swapi.co/api/films/1/");
+// console.log(peopleArray)
+
+// peopleArray.forEach(peopleArray =>{
+//   let players =document.createElement('div')
+
+//   let players = document.createElement ('h1')
+//   players.appendChild
+//   console.log(peopleArray)
+// } )
+
 // let foo = document.querySelector('.title')
 // let bar= document.querySelector('.crawl')
 // //check both above lines
