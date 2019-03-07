@@ -39,3 +39,8 @@ films.forEach(film => {
 // titleElement.textContent = films[0].title
 // crawlElement.textContent = films[0].opening_crawl
 // //check both above lines
+
+var peopleArray = peopleArray.filter(callback(element[, index[, array]])[, thisArg])
+let peopleArray = people.filter(peopleFunction1=> peopleFunction1 ["films"] == "https://swapi.co/api/films/1/");
+console.log(peopleArray)
+
