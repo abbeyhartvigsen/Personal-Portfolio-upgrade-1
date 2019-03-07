@@ -40,7 +40,11 @@ films.forEach(film => {
 // crawlElement.textContent = films[0].opening_crawl
 // //check both above lines
 
-var peopleArray = peopleArray.filter(callback(element[, index[, array]])[, thisArg])
-let peopleArray = people.filter(peopleFunction1=> peopleFunction1 ["films"] == "https://swapi.co/api/films/1/");
-console.log(peopleArray)
+// var peopleArray = peopleArray.filter(callback(element[, index[, array]])[, thisArg])
+// let peopleArray = people.filter(peopleFunction1=> peopleFunction1 ["films"] == "https://swapi.co/api/films/1/");
+// console.log(peopleArray)
 
+//try map people through films 
+// var new_array = arr.map => (peopleArray) {
+  // Return element for new_array
+// }[, thisArg])
