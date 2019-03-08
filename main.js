@@ -21,6 +21,15 @@ films.forEach(film => {
   intro.appendChild(tile)
 })
 
+let filmCharacters = films.filter(newHope => newHope.title == "A New Hope")
+console.log(filmCharacters)
+
+// let char = 
+
+console.log(char)
+
+
+
 // people.filter((currentValue, index, arr), thisValue)
 // let peopleArray = people.filter(peopleFunction1=> peopleFunction1 ["films"] == "https://swapi.co/api/films/1/");
 // console.log(peopleArray)
@@ -48,3 +57,21 @@ films.forEach(film => {
 // var new_array = arr.map => (peopleArray) {
   // Return element for new_array
 // }[, thisArg])
+
+// peopleArray.map(element => {
+//   return peopleArray.length("https://swapi.co/api/films/2/");
+// }
+
+// let mainContainer=document.querySelector('.container')
+// const peopleArray = people.map((people) => {
+//   let newPeopleArray = document.createElement('.div')
+//   newPeopleArray.textContent = people
+// })
+
+// return peopleArray.slice("https://swapi.co/api/films/2/") 
+
+// console.log(peopleArray)
+
+// peopleArray.forEach(people =>
+  
+// })
