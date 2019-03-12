@@ -1,5 +1,6 @@
 import { films } from './films.js'
  import { people } from './people.js'
+ import {planets} from './planets.js'
 //should I add another api too?
 //should I put swpeople.js in this file?
 
@@ -21,12 +22,41 @@ films.forEach(film => {
   intro.appendChild(tile)
 })
 
-let filmCharacters = films.filter(newHope => newHope.title == "A New Hope")
-console.log(filmCharacters)
+const allHomeworlds = people.map(person => {
+  let foundWorld = planets.find (planet => {
+    return planet.url === person.homeworld
+  })
+  return {
+    name : person.name,
+    home: foundWorld.name
+  }
+})
+
+console.log(allHomeworlds)
+
+const mainContainer = document.createElement('div')
+mainContainer.className='container'
+
+allHomeworlds.forEach((person) => {
+  let personElement = document.createElement('div')
+  // personDiv.classnameName = 'box'
+  let planetElement = document.createElement('p')
+
+  personElement.className = 'box'
+  personElement.textContent = person.name
+  planetElement.textContent = person.home
+
+  personElement.appendChild(planetElement)
+  mainContainer.appendChild(personElement)
+})
+
+document.body.appendChild(mainContainer)
+// let filmCharacters = films.filter(newHope => newHope.title == "A New Hope")
+// console.log(filmCharacters)
 
 // let char = 
 
-console.log(char)
+// console.log(char)
 
 
 
