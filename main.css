@@ -250,6 +250,8 @@ background-color: #413659;
   .container {
     display: flex;
     flex-wrap: wrap;
+    color: black;
+    background-color: lightskyblue;
   }
 
   .box {
