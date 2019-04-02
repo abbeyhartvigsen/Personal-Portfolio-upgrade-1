@@ -10,13 +10,16 @@ films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1 )
 
 films.forEach(film => {
     let tile = document.createElement('div')
+    // does tile need to be changed to title?
 
     let titleElement = document.createElement('h1')
   tile.appendChild(titleElement)
+  // does tile need to be changed to title?
   titleElement.textContent = film.title
 
   let crawlElement = document.createElement('div')
   tile.appendChild(crawlElement)
+  // does tile need to be changed to title?
   crawlElement.textContent = film.opening_crawl
 
   intro.appendChild(tile)
