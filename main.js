@@ -1,3 +1,12 @@
+// var swCards = {'luke': 'tattooine', 'Jabba': 'greenworld', 'han': 'healing pool'};
+
+// for (var key in swCards) {
+//   console.log("Card Front " + key + " Card Back " + myArray[key]);
+// }
+
+
+
+
 import { films } from './films.js'
  import { people } from './people.js'
  import {planets} from './planets.js'
