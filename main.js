@@ -7,9 +7,9 @@
 
 
 
-import { films } from './films.js'
- import { people } from './people.js'
- import {planets} from './planets.js'
+import { films } from './Data/films.js'
+import { people } from './Data/people.js'
+import {planets} from './Data/planets.js'
 //should I add another api too?
 //should I put swpeople.js in this file?
 
