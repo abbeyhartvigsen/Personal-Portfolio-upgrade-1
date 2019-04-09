@@ -1,4 +1,4 @@
-{ swCards = {'luke': 'tattooine', 'Jabba Desilijic ': 'Nal Hutta', 'Han': 'Corellia', 'C-3PO': 'Tattooine', 'R2-D2': 'Naboo', 'Darth Vader': 'Tattooine', 'Leia Organa': 'Alderaan', 'Owen Lars': 'Tatooine', 'Beru Whitesun Lars': 'Tatooine', };
+{ swCards = {'luke': 'tattooine', 'Jabba Desilijic ': 'Nal Hutta', 'Han': 'Corellia', 'C-3PO': 'Tattooine', 'R2-D2': 'Naboo', 'Darth Vader': 'Tattooine', 'Leia Organa': 'Alderaan', 'Owen Lars': 'Tatooine', 'Beru Whitesun Lars': 'Tatooine', 'R5-D4': 'Tatooine', 'Briggs Darklighter': 'Tatooine', 'Obi-Wan Kenobi': 'Stewjon', 'Anakin Skywalker': 'Tatooine', 'Wilhuff Tarkin': 'Eriadu', 'Chewbacca', 'Kashyyyk', 'Greedo': 'Rodia', 'Wedge Antilles': 'Corellia', 'Yoda': 'Unknown', 'Palpatine': 'Naboo', 'Boba Fett': 'Kamino'; };
 
 for (var key in swCards) {
   console.log("Card Front " + key + " Card Back " + myArray[key]);

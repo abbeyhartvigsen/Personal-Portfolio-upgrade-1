@@ -38,9 +38,13 @@ const allHomeworlds = people.map(person => {
   let foundWorld = planets.find (planet => {
     return planet.url === person.homeworld
   })
+  // let imageURL = getLastNumber(person.url)
+  //why didn't let imageURL = getLastNumber(person.url) work
   return {
     name : person.name,
     home: foundWorld.name
+    // imagePath: `https://starwars-visualguide.com/assets/img/characters/${imageURL}.jpg`,
+    //why didn't imagePath: `https://starwars-visualguide.com/assets/img/characters/${imageURL}.jpg`, work
   }
 })
 
