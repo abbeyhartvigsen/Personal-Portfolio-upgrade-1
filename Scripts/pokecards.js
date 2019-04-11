@@ -14,7 +14,7 @@ class Pokemon {
 const mainContainer = document.querySelector('.container')
 
 function createPokeCard(pokeData) {
-    console.log(pokeData.id)
+    console.log(pokeData.ID)
     let card = document.createElement('div')
     card.className = 'box'
     let figure = document.createElement('figure')
