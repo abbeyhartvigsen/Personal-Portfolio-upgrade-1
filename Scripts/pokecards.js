@@ -13,9 +13,21 @@ class Pokemon {
 
 const mainContainer = document.querySelector('.container')
 
+var card = document.querySelector('.card');
+    //is this right?
+
 function createPokeCard(pokeData) {
     let card = document.createElement('div')
     card.className = 'box'
+    for (let i = 0; i < 5; i++) {
+        console.log("loop")
+        let cardCont = document.createElement('div')//create DOM element
+        cardCont.addEventListener('click', function () {
+          cardCont.classList.toggle('is-flipped');
+          console.log("click")
+      
+        });
+        //is this right?
     let figure = document.createElement('figure')
     let caption = document.createElement('figcaption')
     let image = document.createElement('img')
