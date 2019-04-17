@@ -13,7 +13,7 @@ import {planets} from './Data/planets.js'
 //should I add another api too?
 //should I put swpeople.js in this file?
 
-const intro = document.querySelector('.intro')
+const intro = document.querySelector('#starwars')
 
 films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1 )
 

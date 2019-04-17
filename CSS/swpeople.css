@@ -8,4 +8,47 @@
     width: 120px;
     margin: 10px;
     text-align: center;
+    color: blue;
+    background-color: aqua;
 }
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    min-height: 55vh;
+    padding-top: 45vh;
+    background-color: #626D8C;
+    color: #ededed;
+  }
+
+  .intro div {
+    width: 400px;
+    height: 340px;
+    /* color: blueviolet; */
+
+    /* .container {
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        background-color: lightskyblue; */
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+
+            /* h1 {
+                color: blue;
+                background-color: aqua
+            } */
+            body { font-family: sans-serif; }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+
+                /* div {
+                    background-color: purple;
+                } */

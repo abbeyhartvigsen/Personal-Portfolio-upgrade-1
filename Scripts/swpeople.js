@@ -9,7 +9,7 @@ const other = people.filter(
 
 //console.log(men, women, other)
 
-const main = document.querySelector('.container')
+const main = document.querySelector('#starwars')
 
 men.forEach(man => {
   let manDiv = document.createElement('div')

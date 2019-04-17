@@ -10,7 +10,7 @@ class Pokemon {
 }
 
 
-const mainContainer = document.querySelector('.container')
+const mainContainer = document.querySelector('.Pokemon')
 //what does this mean other than taking something from css?
 
 var card = document.querySelector('.card');
@@ -43,9 +43,9 @@ function createPokeCard(pokeData) {
         let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
         caption.textContent = upperName
         if (pokeData.id !== 0) {
-            image.src = `./Images/${pokeData.imageID}${upperName}.png`
+            image.src = `../Images/${pokeData.imageID}${upperName}.png`
         } else {
-            image.src = `./Images/Pokeball.png`
+            image.src = `../Images/Pokeball.png`
         }
 
         figure.appendChild(image)
