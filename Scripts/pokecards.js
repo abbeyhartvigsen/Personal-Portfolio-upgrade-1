@@ -1,6 +1,6 @@
 import { pokemon } from '../data/pokemon.js'
 
-console.log(pokemon)
+console.log(pokemon[0]["ability"])
 
 class Pokemon {
     constructor(name) {
@@ -9,11 +9,11 @@ class Pokemon {
     }
 }
 
-
+console.log(pokemon.filter(ability => ability["ability"]))
 const mainContainer = document.querySelector('.Pokemon')
 //what does this mean other than taking something from css?
 
-var card = document.querySelector('.card');
+// var card = document.querySelector('.card');
 //is this right?
 //what does this mean?
 function createPokeCard(pokeData) {
@@ -39,6 +39,13 @@ function createPokeCard(pokeData) {
         let image = document.createElement('img')
         cardContainer.appendChild(card)
         cardContainer.appendChild(cardBack)
+        let ability = document.createElement('p')
+
+
+        ability.textContent = pokemon[0]["ability"]
+
+
+        cardBack.appendChild(ability)
 
         let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
         caption.textContent = upperName
@@ -47,6 +54,8 @@ function createPokeCard(pokeData) {
         } else {
             image.src = `../Images/Pokeball.png`
         }
+        console.log(pokemon.filter(ability => ability.name === upperName))
+
 
         figure.appendChild(image)
         figure.appendChild(caption)
