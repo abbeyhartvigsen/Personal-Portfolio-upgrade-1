@@ -1,6 +1,6 @@
 import { pokemon } from '../data/pokemon.js'
 
-console.log(pokemon[0]["ability"])
+// console.log(pokemon[0]["ability"])
 
 class Pokemon {
     constructor(name) {
@@ -9,26 +9,26 @@ class Pokemon {
     }
 }
 
-console.log(pokemon.filter(ability => ability["ability"]))
+// console.log(pokemon.filter(ability => ability["ability"]))
 const mainContainer = document.querySelector('.Pokemon')
 //what does this mean other than taking something from css?
 
 // var card = document.querySelector('.card');
 //is this right?
 //what does this mean?
-function createPokeCard(pokeData) {
+function createPokeCard(pokeData,abilityMon) {
     let cardContainer = document.createElement('div')
 
     cardContainer.addEventListener('click', function () {
         cardContainer.classList.toggle('is-flipped');
-        console.log("click")
+        // console.log("click")
     
       });
     mainContainer.appendChild(cardContainer)
-    console.log(cardContainer)
+    // console.log(cardContainer)
     cardContainer.className = "card"
     let cardBack = document.createElement('div')
-    cardBack.className = ".card__face--back"
+    cardBack.className = "card__face--back"
     let card = document.createElement('div')
     card.className = 'card__face--front'
 
@@ -41,8 +41,14 @@ function createPokeCard(pokeData) {
         cardContainer.appendChild(cardBack)
         let ability = document.createElement('p')
 
+        
+        // let nameIdx = pokeData.name
+        // let pokeIdx = pokeData.indexOf()
+        // console.log(pokeIdx)
 
-        ability.textContent = pokemon[0]["ability"]
+
+        ability.textContent = "Ability: " + abilityMon
+
 
 
         cardBack.appendChild(ability)
@@ -54,7 +60,7 @@ function createPokeCard(pokeData) {
         } else {
             image.src = `../Images/Pokeball.png`
         }
-        console.log(pokemon.filter(ability => ability.name === upperName))
+        // console.log(pokemon.filter(ability => ability.name === upperName))
 
 
         figure.appendChild(image)
@@ -66,14 +72,26 @@ function createPokeCard(pokeData) {
     }
 
     pokemon.forEach(singleMon => {
+        let abilityName = singleMon.ability
+        console.log(name)
         fetch(singleMon.url)
             .then(function (response) {
+                
                 return response.json();
             })
             .then(function (myJson) {
-                createPokeCard(matchIdToImage(myJson))
+                createPokeCard(matchIdToImage(myJson),abilityName)
+
             })
     })
+    function pokeBack(pokeArray) {
+        let number = pokeArray.indexOf(pokeArray.name)
+        console.log(number)
+        return number
+    }
+    // pokeBack(pokemon)
+
+    // console.log(pokemon.forEach(pokeBack(pokemon)))
 
     function matchIdToImage(aPokemon) {
         if (aPokemon.id === 0) {

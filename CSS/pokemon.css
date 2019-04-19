@@ -112,28 +112,36 @@ figure {
   
   }
   .card__face {
-    position: absolute;
-    width: 100%;
+    /* position: absolute; */
+    /* width: 100%;
     height: 100%;
     line-height: 260px;
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
-    backface-visibility: hidden;
+    font-size: 40px; */
+    /* backface-visibility: hidden; */
   }
   
   .card__face--front {
-    background: red;
+    background-color: red;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
   }
   
   .card__face--back {
-    background: blue;
+    background-color: blue;
     transform: rotateY(180deg);
-    width: 200px;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+
+    /* width: 200px;
     height: 260px;
     bottom: 50px; 
-    position: absolute;
+    position: absolute; */
  
   }
-  
