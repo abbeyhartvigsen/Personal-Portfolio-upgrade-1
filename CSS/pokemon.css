@@ -8,6 +8,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: row;
+}
+
+.Pokemon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -17,7 +25,7 @@ main {
 }
 
 img {
-    width: 220px;
+    width: 160px;
 }
 
 button {

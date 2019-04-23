@@ -31,6 +31,10 @@ function createPokeCard(pokeData,abilityMon) {
     cardBack.className = "card__face--back"
     let card = document.createElement('div')
     card.className = 'card__face--front'
+    let backImage = document.createElement('img')
+    cardBack.appendChild(backImage)
+    backImage.src = '../Images/Pokeball.PNG'
+    
 
 
 
@@ -58,10 +62,10 @@ function createPokeCard(pokeData,abilityMon) {
         if (pokeData.id !== 0) {
             image.src = `../Images/${pokeData.imageID}${upperName}.png`
         } else {
-            image.src = `../Images/Pokeball.png`
+            image.src = `../Images/Pokeball.PNG`
         }
         // console.log(pokemon.filter(ability => ability.name === upperName))
-
+        
 
         figure.appendChild(image)
         figure.appendChild(caption)
